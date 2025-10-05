@@ -1,17 +1,17 @@
 :root {
-  /* Ben 10 / More Green Theme */
+  /* Ben 10 / Brighter Green Theme */
   --bg-1: #111814;
   --bg-2: #0a0c0a;
-  --card: rgba(15, 40, 30, 0.4); /* More green tint */
+  --card: rgba(15, 40, 30, 0.4);
   --card-strong: rgba(20, 55, 40, 0.55);
-  --border: rgba(10, 240, 112, 0.3); /* Green border */
-  --stroke: rgba(10, 240, 112, 0.08);
+  --border: rgba(32, 255, 128, 0.3); /* Brighter Green border */
+  --stroke: rgba(32, 255, 128, 0.08);
   --text: #e0ffef;
   --muted: #75b894;
-  --primary: #0af070;     /* Ben 10 Green */
-  --primary-2: #50ff90;   /* gradient tail */
-  --ring: rgba(10, 240, 112, 0.22);
-  --shadow: 0 10px 30px rgba(10, 240, 112, 0.15), 0 1px 0 rgba(255,255,255,.1) inset; /* Green Glow Shadow */
+  --primary: #20ff80;     /* Brighter Ben 10 Green */
+  --primary-2: #60ff9f;   /* Brighter gradient tail */
+  --ring: rgba(32, 255, 128, 0.22);
+  --shadow: 0 10px 30px rgba(32, 255, 128, 0.15), 0 1px 0 rgba(255,255,255,.1) inset; /* Brighter Green Glow Shadow */
 }
 
 * {
@@ -28,7 +28,7 @@ body {
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   background:
-    radial-gradient(1000px 600px at 10% -10%, rgba(10, 240, 112, .15) 0%, transparent 55%),
+    radial-gradient(1000px 600px at 10% -10%, rgba(32, 255, 128, .15) 0%, transparent 55%),
     radial-gradient(900px 700px at 110% 10%, rgba(0, 0, 0, .2) 0%, transparent 60%),
     linear-gradient(120deg, var(--bg-1) 0%, var(--bg-2) 100%);
   position: relative;
@@ -40,7 +40,7 @@ body::before, body::after {
   content: "";
   position: absolute;
   inset: -20vh -20vw auto auto;
-  background: radial-gradient(closest-side, rgba(10, 240, 112, .15), transparent 65%);
+  background: radial-gradient(closest-side, rgba(32, 255, 128, .15), transparent 65%);
   filter: blur(60px) saturate(120%);
   pointer-events: none;
   transform: translate3d(0, 0, 0);
@@ -48,7 +48,7 @@ body::before, body::after {
 
 body::after {
   inset: auto auto -25vh -25vw;
-  background: radial-gradient(closest-side, rgba(10, 240, 112, .12), transparent 65%);
+  background: radial-gradient(closest-side, rgba(32, 255, 128, .12), transparent 65%);
 }
 
 nav {
@@ -112,7 +112,7 @@ hr {
   border: none;
   height: 1px;
   margin: 16px 0 8px;
-  background: linear-gradient(to right, var(--primary), rgba(255, 255, 255, 0)); /* Green HR */
+  background: linear-gradient(to right, var(--primary), rgba(255, 255, 255, 0));
 }
 
 .w-content {
@@ -145,7 +145,7 @@ hr {
 .user-container:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 32px rgba(0, 0, 0, .3);
-  border-color: rgba(10, 240, 112, 0.6);
+  border-color: rgba(32, 255, 128, 0.6);
 }
 
 h2 {
@@ -198,7 +198,7 @@ select {
 
 input[type="number"]:hover,
 select:hover {
-  border-color: rgba(10, 240, 112, 0.7);
+  border-color: rgba(32, 255, 128, 0.7);
 }
 
 input[type="number"]:focus-visible,
@@ -219,14 +219,14 @@ button {
     linear-gradient(180deg, rgba(255, 255, 255, .22), rgba(255, 255, 255, 0)),
     linear-gradient(90deg, var(--primary) 0%, var(--primary-2) 100%);
   box-shadow:
-    0 8px 22px rgba(10, 240, 112, .25),
+    0 8px 22px rgba(32, 255, 128, .25),
     inset 0 1px 0 rgba(255, 255, 255, .35);
   transform: translateZ(0);
   transition: transform .08s ease, box-shadow .2s ease, filter .2s ease;
 }
 
 button:hover {
-  box-shadow: 0 12px 28px rgba(10, 240, 112, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
+  box-shadow: 0 12px 28px rgba(32, 255, 128, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
   filter: saturate(110%);
 }
 
@@ -236,7 +236,7 @@ button:active {
 
 button:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 6px var(--ring), 0 8px 22px rgba(10, 240, 112, .25);
+  box-shadow: 0 0 0 6px var(--ring), 0 8px 22px rgba(32, 255, 128, .25);
 }
 
 .user-container img,
@@ -254,7 +254,7 @@ button:focus-visible {
 }
 
 #log::-webkit-scrollbar-thumb {
-  background: rgba(10, 240, 112, 0.5); /* Green scrollbar */
+  background: rgba(32, 255, 128, 0.5); /* Brighter Green scrollbar */
   border-radius: 999px;
   border: 2px solid transparent;
   background-clip: content-box;
