@@ -34,7 +34,6 @@ body::before, body::after{
   content:"";
   position: absolute;
   inset: -20vh -20vw auto auto;
-  width: 70vmax; height: 70vmax;
   background: radial-gradient(closest-side, rgba(180,200,255,.25), transparent 65%);
   filter: blur(60px) saturate(120%);
   pointer-events: none;
