@@ -13,8 +13,8 @@
   --shadow: 0 10px 30px rgba(16,24,40,.10), 0 1px 0 rgba(255,255,255,.25) inset;
 }
 
-*{ box-sizing: border-box; }
-html, body{ height: 100%; }
+*{ box-sizing: border-box;}
+html, body{ height: 120vh; }
 
 body{
   margin: 0;
